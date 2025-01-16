@@ -49,7 +49,7 @@ class SistemaReserva {
 		for (auto i = reservaQuadra[quadra].begin(); i != reservaQuadra[quadra].end(); i++) {
 			if (i->data == data && i->horario == horario) {
 				reservaQuadra[quadra].erase(i);
-				cout << typeid(i).name() << endl; // teste
+				//cout << typeid(i).name() << endl; // teste
 				return true;
 			}
 			return false;
