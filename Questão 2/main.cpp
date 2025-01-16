@@ -47,6 +47,7 @@ public:
 	Conjunto dif(Conjunto c) { // f) diferença
 		Conjunto r;
 		for (int i : elementos) if (!c.contem(i)) r.inserir(i);
+		return r;
 	}
 
 	bool contem(int elemento) const { // g) testa se pertence ao conjunto
@@ -91,6 +92,8 @@ public:
 };
 
 int main() {
+	setlocale(LC_ALL, "");
+
 	Conjunto teste1;
 	teste1.inserir(123);
 	teste1.inserir(456);
